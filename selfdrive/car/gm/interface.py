@@ -65,7 +65,7 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.pid.kf = 0.000045
 
     ret.steerRateCost = 0.35
-    ret.steerActuatorDelay = 0.16  # Default delay, not measured yet
+    ret.steerActuatorDelay = 0.165  # Default delay, not measured yet
 
     if candidate == CAR.VOLT:
       # supports stop and go, but initial engage must be above 18mph (which include conservatism)
