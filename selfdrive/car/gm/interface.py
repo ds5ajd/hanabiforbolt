@@ -165,7 +165,7 @@ class CarInterface(CarInterfaceBase):
     ret.stoppingControl = True
     ret.startAccel = 1.0
 
-    ret.steerLimitTimer = 2.5
+    ret.steerLimitTimer = 2
     ret.radarTimeStep = 0.0667  # GM radar runs at 15Hz instead of standard 20Hz
 
     return ret
