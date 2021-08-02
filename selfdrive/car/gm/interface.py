@@ -63,8 +63,8 @@ class CarInterface(CarInterfaceBase):
       ret.lateralTuning.pid.kdV = [0.]  #corolla from shane fork : 0.725
       ret.lateralTuning.pid.kf = 0.000045
 
-    ret.steerRateCost = 1.0
-    ret.steerActuatorDelay = 0.1  # Default delay, not measured yet
+    ret.steerRateCost = 0.3
+    ret.steerActuatorDelay = 0.175  # Default delay, not measured yet
 
     if candidate == CAR.VOLT:
       # supports stop and go, but initial engage must be above 18mph (which include conservatism)
@@ -163,7 +163,7 @@ class CarInterface(CarInterfaceBase):
 
     ret.startAccel = 1.0
 
-    ret.steerLimitTimer = 0.4
+    ret.steerLimitTimer = 2.4
     ret.radarTimeStep = 0.0667  # GM radar runs at 15Hz instead of standard 20Hz
 
     return ret
